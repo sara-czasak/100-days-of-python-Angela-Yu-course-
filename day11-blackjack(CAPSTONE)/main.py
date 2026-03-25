@@ -1,6 +1,5 @@
 import random
 
-
 # Building deck of cards
 deck = [i for i in range(1, 12)]
 deck = deck * 4
@@ -16,10 +15,7 @@ def choose_starting_cards(deck):
     player_hand = random.choices(deck, k=2)
     return dealer_hand, player_hand
 
-# dealer_hand, player_hand = choose_starting_cards(deck)
-# print(breaking_line)
-# print(f"Dealer's first card: {dealer_hand[0]}")
-# print(f"Your cards: {player_hand} (total: {sum(dealer_hand)})")
+
 done = False
 while not done:
     dealer_hand, player_hand = choose_starting_cards(deck)

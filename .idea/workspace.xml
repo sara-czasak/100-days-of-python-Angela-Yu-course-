@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day11-blackjack(CAPSTONE)/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day12-number guessing game/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day11-blackjack(CAPSTONE)/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day11-blackjack(CAPSTONE)/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,12 +57,13 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/sarap/py_dev/Angela Yu Course(retake)/day9-silent auction",
+    "last_opened_file_path": "C:/Users/sarap/py_dev/Angela Yu Course(retake)/day11-blackjack(CAPSTONE)",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day11-blackjack(CAPSTONE)" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day9-silent auction" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day8-ceasar cipher" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day7-hangman" />
