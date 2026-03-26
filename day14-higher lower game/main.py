@@ -49,6 +49,7 @@ while play:
     else:
         print("*** GAME OVER ***")
         print(f"* YOUR SCORE IS: {score} *")
+        score = 0
 
         print("Would you like to play again? (y/n): ")
         start = input("--> ").lower()
