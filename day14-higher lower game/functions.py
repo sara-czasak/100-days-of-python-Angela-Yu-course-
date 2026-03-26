@@ -22,6 +22,10 @@ def choose_item():
     return book
 
 
+def check_if_item_unique(book1, book2):
+    pass
+
+
 def check_higher(book1, book2):
     if book1['word_count'] > book2['word_count']:
         book = book1
