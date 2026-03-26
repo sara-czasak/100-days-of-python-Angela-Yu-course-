@@ -38,7 +38,7 @@ data = [
     {
         "author": "Bram Stoker",
         "word_count":165453,
-        "book_title": "Dracula ",
+        "book_title": "Dracula",
         "country": "Ireland"
     },
     {
