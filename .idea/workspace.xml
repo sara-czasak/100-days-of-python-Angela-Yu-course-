@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day15-coffe-machine/coffee_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day15-coffe-machine/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day15-coffe-machine/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day15-coffe-machine/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16-oop-coffee-machine/coffee_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16-oop-coffee-machine/coffee_machine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day16-oop-coffee-machine/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +48,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.coffee_machine.executor": "Run",
     "Python.d.executor": "Run",
     "Python.decode_encode.executor": "Run",
     "Python.functions.executor": "Run",
@@ -59,17 +61,17 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/sarap/py_dev/Angela Yu Course(retake)/day15-coffe-machine",
+    "last_opened_file_path": "C:/Users/sarap/py_dev/Angela Yu Course(retake)/day16-oop-coffee-machine",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day16-oop-coffee-machine" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day15-coffe-machine" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day14-higher lower game" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day12-number guessing game" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day11-blackjack(CAPSTONE)" />
-      <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day9-silent auction" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)" />
