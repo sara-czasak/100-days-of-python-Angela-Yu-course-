@@ -5,12 +5,10 @@ class CoffeeMachine:
     def __init__(self, resources, menu):
         self.resources = resources
         self.menu = menu
-        print(self.menu)
-        print(self.resources)
 
 
     def show_menu(self):
-        print("*** MENU ***")
+        print("\n*** MENU ***")
         for i in self.menu:
             print(f"{i[0].capitalize()} - {i.capitalize()}")
 
@@ -24,6 +22,7 @@ class CoffeeMachine:
             choice = 'off'
         elif choice.startswith('m'):
             choice = 'maintenance'
+            self.print_report()
         elif choice.startswith('e'):
             choice = 'espresso'
         elif choice.startswith('c'):
@@ -57,19 +56,39 @@ class CoffeeMachine:
         if False in feedback:
             for i in missing:
                 print(f"Machine is out of {i}..")
+            return False
+        else:
+            return True
 
 
-    def update_resources(self):
-        pass
+    def update_resources(self, choice):
+        self.resources['water'] -= self.menu[choice]['ingredients']['water']
+        self.resources['milk'] -= self.menu[choice]['ingredients']['milk']
+        self.resources['coffee'] -= self.menu[choice]['ingredients']['coffee']
+        self.resources['money'] += self.menu[choice]['cost']
 
 
-    def take_payment(self):
-        pass
+    def take_payment(self, choice):
+        price = self.menu[choice]['cost']
+        print(f"Please pay ${price:.2f} for {choice}.")
+
+        pennies = int(input("Pennies: ")) * 0.01
+        nickels = int(input("Nickels: ")) * 0.05
+        dimes = int(input("Dimes: ")) * 0.10
+        quarters = int(input("Quarters: ")) * 0.25
+        paid = pennies + nickels + dimes + quarters
+
+        if paid >= price:
+            print(f"Processing payment of ${paid:.2f}.")
+            print(f"Here is your change: {paid-price:.2f}.")
+            self.update_resources(choice)
+        else:
+            print(f"I'm sorry, {paid:.2f} is not enough.")
 
 
     def print_report(self):
-        pass
-
-
-    def get_order_data(self):
-        pass
+        print("\n*** MAINTENANCE MODE ON ***")
+        print('-' * 15)
+        for i in self.resources:
+            print(f"{i}: {self.resources[i]}")
+        print('-' * 15, "\n")
