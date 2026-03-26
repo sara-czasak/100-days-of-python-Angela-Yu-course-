@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/day14-higher lower game/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/day14-higher lower game/functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day14-higher lower game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day14-higher lower game/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +49,7 @@
     "Python.d.executor": "Run",
     "Python.decode_encode.executor": "Run",
     "Python.functions.executor": "Run",
+    "Python.game_data.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",

@@ -4,6 +4,9 @@ from functions import *
 print("*** WELCOME TO HIGHER LOWER ***")
 start = input("Are you ready to start? (y/n): ").lower()
 
+book1 = choose_item()
+book2 = choose_item()
+
 play = start_game(start)
 score = 0
 
@@ -13,8 +16,6 @@ while play:
 
     print("*** WHICH BOOK HAS MORE WORDS? ***")
 
-    book1 = choose_item()
-    book2 = choose_item()
 
     unique = False
     while not unique:
@@ -43,6 +44,15 @@ while play:
     higher_book = check_higher(book1, book2)
     if check_choice(higher_book, choice):
         score += 1
+        book1, book2 = choose_next_item(book1, book2)
+        check_if_item_unique(book1, book2)
     else:
-        play = False
+        print("*** GAME OVER ***")
+        print(f"* YOUR SCORE IS: {score} *")
+
+        print("Would you like to play again? (y/n): ")
+        start = input("--> ").lower()
+        play = start_game(start)
+
+
 

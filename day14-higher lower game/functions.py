@@ -38,9 +38,20 @@ def check_higher(book1, book2):
         return book
 
 
-
 def check_choice(book, choice):
     if book == choice:
         return True
     else:
         return False
+
+
+def choose_next_item(book1, book2):
+    if book1['word_count'] > book2['word_count']:
+        book1 = book2
+        book2 = choose_item()
+        return book1, book2
+    else:
+        book1 = book1
+        book2 = choose_item()
+        return book1, book2
+
