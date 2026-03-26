@@ -12,11 +12,12 @@ class ScoreBoard:
     def check_answer(self, answer, question, score):
         correct = self.correct_answer[self.question_text.index(question)]
         print(correct)
-        if answer == correct:
+        if answer == str(correct):
             score += 1
             self.increase_score(score)
+            return True
         else:
-            self.increase_score(score)
+            return False
 
 
     def increase_score(self, score):
@@ -27,6 +28,11 @@ class ScoreBoard:
     def display_score(self, score):
         return f"Score: {score} / {self.question_total}"
 
+
+    def display_question(self, index):
+        current_question = self.question_text[index]
+        current_correct_answer = self.correct_answer[index]
+        print(current_question)
 
 
 scoreboard = ScoreBoard(15, quiz_data)

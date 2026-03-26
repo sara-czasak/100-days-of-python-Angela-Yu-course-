@@ -21,3 +21,16 @@ while not ready:
     else:
         print('Please enter either "y" or "n"')
         start = input().lower()
+
+
+game_on = True
+counter = 0
+score = 0
+
+while game_on:
+    print("\n*** TRUE or FALSE ***")
+    question = score_board.display_question(counter)
+    answer = input().lower()
+    if score_board.check_answer(answer, question, score):
+        pass
+
