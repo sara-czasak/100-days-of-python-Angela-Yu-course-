@@ -23,7 +23,10 @@ def choose_item():
 
 
 def check_if_item_unique(book1, book2):
-    pass
+    if book1 == book2:
+        return False
+    else:
+        return True
 
 
 def check_higher(book1, book2):

@@ -12,8 +12,18 @@ while play:
 
 
     print("*** WHICH BOOK HAS MORE WORDS? ***")
+
     book1 = choose_item()
     book2 = choose_item()
+
+    unique = False
+    while not unique:
+        if not check_if_item_unique(book1, book2):
+            book1 = choose_item()
+            book2 = choose_item()
+        else:
+            unique = True
+
     print(f'A) "{book1['book_title']}" by {book1['author']} an author from {book1['country']}\n\n*** OR ***\n\nB) "{book2['book_title']}" by {book2['author']} an author from {book2['country']}\n')
     choice = input("--> ").lower()
     choice_approved = False
