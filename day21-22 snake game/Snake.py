@@ -12,6 +12,7 @@ class Snake(Turtle):
         super().__init__()
         self.segments = []
         self.create_initial_snake_body()
+        self.head = self.segments[0]
 
 
     def create_initial_snake_body(self):
@@ -40,16 +41,16 @@ class Snake(Turtle):
 
 
     def move_left(self):
-            self.segments[0].setheading(180)
+        self.head.setheading(180)
 
 
     def move_right(self):
-        self.segments[0].setheading(0)
+        self.head.setheading(0)
 
 
     def move_up(self):
-            self.segments[0].setheading(90)
+        self.head.setheading(90)
 
 
     def move_down(self):
-            self.segments[0].setheading(270)
+        self.head.setheading(270)
