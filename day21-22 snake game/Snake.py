@@ -6,24 +6,21 @@ class Snake:
     def __init__(self):
         self.body = self.create_initial_body()
         self.head = self.body[-1]
-
+        self.segments = []
+        self.starting_positions = [(0, 0), (-20, 0), (-40, 0)]
 
     def create_initial_body(self):
-        snake = []
-        x = -20
-        y = 0
-        for i in range(3):
+        for position in self.starting_positions:
             t = Turtle()
             t.penup()
             t.shape('circle')
-            t.goto(x, y)
-            if i == 2:
+            t.goto(position)
+            if position == (0, 0):
                 t.color('black')
             else:
                 t.color(change_color())
-            x += 20
-            snake.append(t)
-        return snake
+            self.segments.append(t)
+        return self.segments
 
 
     def move(self, moving):
