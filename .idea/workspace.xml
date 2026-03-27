@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day19- race game/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19- race game/turtle_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day21-22 snake game/Snake.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day21-22 snake game/func.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day21-22 snake game/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +48,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Snake.executor": "Run",
     "Python.__init__.executor": "Run",
     "Python.classes.executor": "Run",
     "Python.coffee_machine.executor": "Run",
