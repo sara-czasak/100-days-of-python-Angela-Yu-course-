@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day18-milion dollar painting/turtle_helper_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19- race game/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19- race game/turtle_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +55,7 @@
     "Python.functions.executor": "Run",
     "Python.game_data.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.turtle_functions.executor": "Run",
     "Python.turtle_helper_functions.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
