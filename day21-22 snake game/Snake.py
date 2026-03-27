@@ -35,21 +35,21 @@ class Snake(Turtle):
         self.segments[0].forward(MOVE_DISTANCE)
 
 
-    def check_if_valid_move(self):
+    def check_valid_move(self):
         pass
 
 
     def move_left(self):
-        pass
+            self.segments[0].setheading(180)
 
 
     def move_right(self):
-        pass
+        self.segments[0].setheading(0)
 
 
     def move_up(self):
-        pass
+            self.segments[0].setheading(90)
 
 
     def move_down(self):
-        pass
+            self.segments[0].setheading(270)
