@@ -2,55 +2,54 @@ from turtle import Turtle
 from func import *
 
 
-class Snake:
+# CONSTANTS
+STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
+MOVE_DISTANCE = 20
+
+
+class Snake(Turtle):
     def __init__(self):
-        self.body = self.create_initial_body()
-        self.head = self.body[-1]
+        super().__init__()
         self.segments = []
-        self.starting_positions = [(0, 0), (-20, 0), (-40, 0)]
+        self.create_initial_snake_body()
 
-    def create_initial_body(self):
-        for position in self.starting_positions:
-            t = Turtle()
-            t.penup()
-            t.shape('circle')
-            t.goto(position)
-            if position == (0, 0):
-                t.color('black')
+
+    def create_initial_snake_body(self):
+        for position in STARTING_POSITIONS:
+            new_segment = Turtle('square')
+            new_segment.penup()
+
+            new_segment.goto(position)
+            if new_segment.position() == (0, 0):
+                new_segment.color('white')
             else:
-                t.color(change_color())
-            self.segments.append(t)
-        return self.segments
+                new_segment.color(change_color())
+            self.segments.append(new_segment)
 
 
-    def move(self, moving):
-        if moving == True:
-            for i in  self.body:
-                i.forward(5)
-        else:
-            for i in self.body:
-                i.setheading(0)
+    def move_snake(self):
+        for seg_num in range(len(self.segments) - 1, 0, -1):
+            new_x = self.segments[seg_num - 1].xcor()
+            new_y = self.segments[seg_num - 1].ycor()
+            self.segments[seg_num].goto(new_x, new_y)
+        self.segments[0].forward(MOVE_DISTANCE)
 
 
-    def change_direction(self, direction):
-        last_segment = self.head.pos()
-        for segment in self.body:
-            if last_segment == self.body[-1]:
-                if direction == 'up':
-                    segment.setheading(90)
-                    segment.forward(5)
-                else:
-                    current_pos = segment.pos()
-                    segment.goto(last_segment)
-                    last_segment = current_pos
-
-        # if direction == 'up':
-        #     for i in self.body:
-        #         if i == self.head:
-        #             i.setheading(90)
-        #             i.forward(5)
+    def check_if_valid_move(self):
+        pass
 
 
+    def move_left(self):
+        pass
 
 
+    def move_right(self):
+        pass
 
+
+    def move_up(self):
+        pass
+
+
+    def move_down(self):
+        pass
