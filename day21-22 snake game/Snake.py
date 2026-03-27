@@ -5,6 +5,10 @@ from func import *
 # CONSTANTS
 STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
 
 
 class Snake(Turtle):
@@ -46,20 +50,20 @@ class Snake(Turtle):
 
 
     def move_left(self):
-        if not self.head.heading() == 0.0:
-            self.head.setheading(180)
+        if not self.head.heading() == RIGHT:
+            self.head.setheading(LEFT)
 
 
     def move_right(self):
-        if not self.head.heading() == 180:
-            self.head.setheading(0)
+        if not self.head.heading() == LEFT:
+            self.head.setheading(RIGHT)
 
 
     def move_up(self):
-        if not self.head.heading() == 270:
-            self.head.setheading(90)
+        if not self.head.heading() == DOWN:
+            self.head.setheading(UP)
 
 
     def move_down(self):
-        if not self.head.heading() == 90:
-            self.head.setheading(270)
+        if not self.head.heading() == UP:
+            self.head.setheading(DOWN)
