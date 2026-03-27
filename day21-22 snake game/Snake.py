@@ -17,7 +17,7 @@ class Snake(Turtle):
 
     def create_initial_snake_body(self):
         for position in STARTING_POSITIONS:
-            new_segment = Turtle('square')
+            new_segment = Turtle('circle')
             new_segment.penup()
 
             new_segment.goto(position)
@@ -36,21 +36,30 @@ class Snake(Turtle):
         self.segments[0].forward(MOVE_DISTANCE)
 
 
-    def check_valid_move(self):
-        pass
+    def check_valid_move(self, current_heading, move_direction):
+        print("current dir: ",current_heading)
+        print("new dir: ", move_direction)
+        if current_heading != move_direction:
+            return True
+        else:
+            return False
 
 
     def move_left(self):
-        self.head.setheading(180)
+        if not self.head.heading() == 0.0:
+            self.head.setheading(180)
 
 
     def move_right(self):
-        self.head.setheading(0)
+        if not self.head.heading() == 180:
+            self.head.setheading(0)
 
 
     def move_up(self):
-        self.head.setheading(90)
+        if not self.head.heading() == 270:
+            self.head.setheading(90)
 
 
     def move_down(self):
-        self.head.setheading(270)
+        if not self.head.heading() == 90:
+            self.head.setheading(270)
