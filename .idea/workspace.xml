@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day22-pong/ScoreBoard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day21-22 snake game/Food.py" beforeDir="false" afterPath="$PROJECT_DIR$/day20-21 snake game/Food.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day21-22 snake game/ScoreBoard.py" beforeDir="false" afterPath="$PROJECT_DIR$/day20-21 snake game/ScoreBoard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day21-22 snake game/Snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/day20-21 snake game/Snake.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day21-22 snake game/func.py" beforeDir="false" afterPath="$PROJECT_DIR$/day20-21 snake game/func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day21-22 snake game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day20-21 snake game/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day22-pong/Ball.py" beforeDir="false" afterPath="$PROJECT_DIR$/day22-pong/Ball.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day22-pong/Paddle.py" beforeDir="false" afterPath="$PROJECT_DIR$/day22-pong/Paddle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day22-pong/ScoreBoard.py" beforeDir="false" afterPath="$PROJECT_DIR$/day22-pong/ScoreBoard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day22-pong/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day22-pong/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

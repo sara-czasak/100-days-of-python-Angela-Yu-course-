@@ -8,6 +8,7 @@ class Ball(Turtle):
         self.penup()
         self.x_move = 10
         self.y_move = 10
+        self.move_speed = 0.1
 
 
     def move(self):
@@ -19,14 +20,17 @@ class Ball(Turtle):
         self.y_move *= -1
 
 
-    def bouce_x(self):
+    def bounce_x(self):
         self.x_move *= -1
+        self.move_speed *= 0.9
 
 
     def reset_ball(self):
         self.hideturtle()
         self.goto(0, 0)
+        self.bounce_x()
         self.showturtle()
+        self.move_speed = 0.1
 
 if __name__ == '__main__':
     print("This is the Ball module")
