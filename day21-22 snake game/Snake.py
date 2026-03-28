@@ -1,5 +1,6 @@
 from turtle import Turtle
 from func import *
+from Food import Food
 
 
 # CONSTANTS
@@ -17,7 +18,7 @@ class Snake(Turtle):
         self.segments = []
         self.create_initial_snake_body()
         self.head = self.segments[0]
-
+        self.tail = self.segments[-1]
 
     def create_initial_snake_body(self):
         for position in STARTING_POSITIONS:
@@ -67,3 +68,11 @@ class Snake(Turtle):
     def move_down(self):
         if not self.head.heading() == UP:
             self.head.setheading(DOWN)
+
+
+    def eat_food(self):
+        print("EATING FOOD")
+
+
+if __name__ == '__main__':
+    print("You are currently in the Snake module. Please run main.py file.")

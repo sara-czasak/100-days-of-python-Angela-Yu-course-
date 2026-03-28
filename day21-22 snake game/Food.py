@@ -6,18 +6,18 @@ from func import *
 class Food(Turtle):
     def __init__(self):
         super().__init__()
-        self.food_x = random.randint(-280, 280)
-        self.food_y = random.randint(-280, 280)
+        self.shape("circle")
+        self.penup()
+        self.shapesize(stretch_wid=0.5, stretch_len=0.5)
+        self.refresh()
 
 
-    def new_food(self):
-        food = Turtle()
-        food.hideturtle()
-        food.penup()
-        food.goto((self.food_x, self.food_y))
-        food.color(change_color())
-        food.shape('circle')
-        food.turtlesize(0.5)
-        food.showturtle()
+    def refresh(self):
+        random_x = random.randint(-260, 260)
+        random_y = random.randint(-260, 260)
+        self.goto(random_x, random_y)
+        color = change_color()
+        self.color(color)
 
-
+if __name__ == '__main__':
+    print("You are currently in the Food module. Please run main.py file.")
