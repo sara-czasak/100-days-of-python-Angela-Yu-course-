@@ -42,6 +42,7 @@ while game_is_on:
 
     # Detect collision with screen edges
     if snake.head.xcor() > 300 or snake.head.xcor() < -300 or snake.head.ycor() > 300 or snake.head.ycor() < -300:
+        scoreboard.game_over_text(score)
         game_is_on = False
 
 
