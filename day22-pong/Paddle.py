@@ -27,3 +27,7 @@ class Paddle(Turtle):
     def down(self):
         self.goto(self.xcor(), self.ycor() - MOVE_DISTANCE)
 
+
+
+if __name__ == '__main__':
+    print("This is the Paddle module")
