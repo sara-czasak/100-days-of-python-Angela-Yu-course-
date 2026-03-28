@@ -18,20 +18,11 @@ class Snake(Turtle):
         self.segments = []
         self.create_initial_snake_body()
         self.head = self.segments[0]
-        self.tail = self.segments[-1]
+
 
     def create_initial_snake_body(self):
         for position in STARTING_POSITIONS:
-            new_segment = Turtle('circle')
-            new_segment.penup()
-
-            new_segment.goto(position)
-            if new_segment.position() == (0, 0):
-                new_segment.color('white')
-            else:
-                new_segment.color(change_color())
-            self.segments.append(new_segment)
-
+            self.add_segment(position)
 
     def move_snake(self):
         for seg_num in range(len(self.segments) - 1, 0, -1):
@@ -70,8 +61,20 @@ class Snake(Turtle):
             self.head.setheading(DOWN)
 
 
-    def eat_food(self):
-        print("EATING FOOD")
+    def extend(self):
+        self.add_segment(self.segments[-1].position())
+
+
+    def add_segment(self, position):
+        new_segment = Turtle('circle')
+        new_segment.penup()
+
+        new_segment.goto(position)
+        if new_segment.position() == (0, 0):
+            new_segment.color('white')
+        else:
+            new_segment.color(change_color())
+        self.segments.append(new_segment)
 
 
 if __name__ == '__main__':
