@@ -46,11 +46,10 @@ while game_is_on:
         game_is_on = False
 
 
-    for segment in snake.segments:
+    for segment in snake.segments[1:]:
         if snake.head.distance(segment) < 10:
-            if snake.head != segment:
-                scoreboard.game_over_text(score)
-                game_is_on = False
+            scoreboard.game_over_text(score)
+            game_is_on = False
 
 
 
