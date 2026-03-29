@@ -3,6 +3,7 @@ import time
 from Snake import Snake
 from Food import Food
 from ScoreBoard import ScoreBoard
+from high_score import *
 
 
 screen = Screen()
@@ -13,10 +14,11 @@ screen.title("Snake Game v1")
 screen.tracer(0)
 
 score = 0
+high_score = current_high_score()
 
 snake = Snake()
 food = Food()
-scoreboard = ScoreBoard(score)
+scoreboard = ScoreBoard(score, high_score)
 
 screen.listen()
 screen.onkey(snake.move_down, "Down")
@@ -43,13 +45,18 @@ while game_is_on:
     # Detect collision with screen edges
     if snake.head.xcor() > 300 or snake.head.xcor() < -300 or snake.head.ycor() > 300 or snake.head.ycor() < -300:
         scoreboard.game_over_text(score)
+        if score > high_score:
+            save_new_high_score(score)
         game_is_on = False
 
 
     for segment in snake.segments[1:]:
         if snake.head.distance(segment) < 10:
             scoreboard.game_over_text(score)
+            if score > high_score:
+                save_new_high_score(score)
             game_is_on = False
+
 
 
 
