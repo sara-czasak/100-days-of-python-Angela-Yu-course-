@@ -17,7 +17,7 @@ class Player(Turtle):
 
     def create_player(self):
         self.shape("turtle")
-        self.color(change_color())
+        self.color("black")
         self.hideturtle()
         self.penup()
         self.setheading(90)
@@ -28,3 +28,14 @@ class Player(Turtle):
 
     def move(self):
         self.goto(self.xcor(), self.ycor() + SPEED)
+
+
+    def reset(self):
+        self.shape("turtle")
+        self.color("black")
+        self.hideturtle()
+        self.penup()
+        self.setheading(90)
+        self.turtlesize(2)
+        self.goto(self.x, self.y)
+        self.showturtle()

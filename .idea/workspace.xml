@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day23-turtle crossing (CAPSTONE)/car.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day23-turtle crossing (CAPSTONE)/functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day23-turtle crossing (CAPSTONE)/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day23-turtle crossing (CAPSTONE)/player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_module.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day23-turtle crossing (CAPSTONE)/canv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day23-turtle crossing (CAPSTONE)/car.py" beforeDir="false" afterPath="$PROJECT_DIR$/day23-turtle crossing (CAPSTONE)/car.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day23-turtle crossing (CAPSTONE)/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day23-turtle crossing (CAPSTONE)/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day23-turtle crossing (CAPSTONE)/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/day23-turtle crossing (CAPSTONE)/player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
