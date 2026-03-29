@@ -17,11 +17,15 @@ bg = BackGround()
 player = Player(0, -200)
 car = Car()
 
+max_cars = 10
+
 game_on = True
 while game_on:
     screen.update()
-    car.create_car()
-    car.move()
+
+    if len(car.all_cars) < max_cars:
+        car.create_car()
+        car.move()
     time.sleep(0.001)
     screen.onkeypress(player.move, "space")
     if player.ycor() > 180:

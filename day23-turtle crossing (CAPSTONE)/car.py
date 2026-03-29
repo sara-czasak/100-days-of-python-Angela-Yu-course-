@@ -1,11 +1,12 @@
 from turtle import Turtle
-from my_module import change_color
+from functions import change_color
 import random
 
 
 # CONSTANTS
 STARTING_POSITIONS = [(400, -25), (400, -75), (400, -125), (400, 25), (400, 75), (400, 125)]
-MOVE_DISTANCE = 20
+MOVE_DISTANCE = 1
+CAR_DISTANCE = 100
 
 
 class Car(Turtle):
@@ -22,8 +23,12 @@ class Car(Turtle):
         new_car.color(change_color(), change_color())
         new_car.goto(random.choice(STARTING_POSITIONS))
         new_car.setheading(180)
-        new_car.showturtle()
-        self.all_cars.append(new_car)
+
+        if self.lane_clear(new_car):
+            new_car.showturtle()
+            self.all_cars.append(new_car)
+        else:
+            pass
 
     def move(self):
         for car in self.all_cars:
@@ -32,3 +37,17 @@ class Car(Turtle):
             if car.xcor() < -350:
                 car.hideturtle()
                 car.goto(random.choice(STARTING_POSITIONS))
+
+
+    def lane_clear(self, new_car):
+        for car in self.all_cars:
+            distance = car.distance(new_car)
+            if distance < CAR_DISTANCE:
+                return False
+        return True
+
+
+    def reset(self, car_to_reset):
+        self.hideturtle()
+        self.goto(random.choice(STARTING_POSITIONS))
+        self.showturtle()
