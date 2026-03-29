@@ -3,6 +3,7 @@ from player import Player
 from car import CarManager
 import time
 from canv import *
+from scoreboard import ScoreBoard
 
 
 screen = Screen()
@@ -12,6 +13,7 @@ screen.colormode(255)
 screen.title("*** Turtle Crossing ***")
 screen.listen()
 
+scoreboard = ScoreBoard()
 bg = BackGround()
 
 player = Player(0, -200)
@@ -30,10 +32,12 @@ while game_on:
 
     for car in car_manager.all_cars:
         if car.distance(player) < 40:
+            scoreboard.game_over()
             game_on = False
 
     if player.is_at_finish_line():
         player.reset()
+        scoreboard.increase_score()
         car_manager.level_up()
 
 
