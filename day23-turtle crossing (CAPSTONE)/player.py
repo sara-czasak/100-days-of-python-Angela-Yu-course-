@@ -11,19 +11,8 @@ class Player(Turtle):
         super().__init__()
         self.x = x
         self.y = y
-        self.create_player()
+        self.reset()
         self.speed = 10
-
-
-    def create_player(self):
-        self.shape("turtle")
-        self.color("black")
-        self.hideturtle()
-        self.penup()
-        self.setheading(90)
-        self.turtlesize(2)
-        self.goto(self.x, self.y)
-        self.showturtle()
 
 
     def move(self):
@@ -32,10 +21,10 @@ class Player(Turtle):
 
     def reset(self):
         self.shape("turtle")
-        self.color("black")
+        self.color("black", change_color())
         self.hideturtle()
         self.penup()
         self.setheading(90)
-        self.turtlesize(2)
+        self.turtlesize(2, outline=2)
         self.goto(self.x, self.y)
         self.showturtle()
