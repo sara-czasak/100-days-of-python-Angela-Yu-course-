@@ -75,4 +75,6 @@ class BackGround(Turtle):
             if pos_y > 140:
                 done = True
 
+            self.penup()
+
 

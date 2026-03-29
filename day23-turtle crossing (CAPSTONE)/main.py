@@ -1,6 +1,6 @@
 from turtle import Screen
 from player import Player
-from car import Car
+from car import CarManager
 import time
 from canv import *
 
@@ -15,26 +15,26 @@ screen.listen()
 bg = BackGround()
 
 player = Player(0, -200)
-car = Car()
+car_manager = CarManager()
 
-max_cars = 10
 
 game_on = True
 while game_on:
+    time.sleep(0.1)
     screen.update()
 
-    if len(car.all_cars) < max_cars:
-        car.create_car()
-        car.move()
-    time.sleep(0.001)
+    car_manager.create_car()
+    car_manager.move_cars()
+
     screen.onkeypress(player.move, "space")
-    if player.ycor() > 180:
-        player.reset()
-    for i in car.all_cars:
-        if i.distance(player) < 50:
-            player.reset()
+
+    for car in car_manager.all_cars:
+        if car.distance(player) < 40:
             game_on = False
 
+    if player.is_at_finish_line():
+        player.reset()
+        car_manager.level_up()
 
 
 
