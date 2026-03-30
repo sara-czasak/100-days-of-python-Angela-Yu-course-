@@ -13,3 +13,12 @@ def check_if_state(answer):
         index = all_states.index(answer.capitalize())
         return all_x[index], all_y[index]
     return False
+
+
+def missed_states(guessed_states):
+    missed_states = []
+    for state in all_states:
+        if state not in guessed_states:
+            missed_states.append(state)
+    df = pd.DataFrame(missed_states)
+    df.to_csv('states_to_learn.csv')
