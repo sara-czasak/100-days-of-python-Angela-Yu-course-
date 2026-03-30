@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day25-states game/50_states.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25-states game/Practice/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25-states game/Practice/weather_data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25-states game/blank_states_img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day25-states game/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25-states game/Practice/squirel exercise/2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25-states game/Practice/squirel exercise/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day25-states game/quiz_brain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day25-states game/Practice/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day25-states game/Practice/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day25-states game/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day25-states game/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +66,7 @@
     "Python.high_score.executor": "Run",
     "Python.main.executor": "Run",
     "Python.player.executor": "Run",
+    "Python.quiz_brain.executor": "Run",
     "Python.scoreboard.executor": "Run",
     "Python.turtle_functions.executor": "Run",
     "Python.turtle_helper_functions.executor": "Run",
@@ -76,19 +77,20 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/sarap/py_dev/Angela Yu Course(retake)/day25-states game",
+    "last_opened_file_path": "C:/Users/sarap/py_dev/Angela Yu Course(retake)/day25-states game/Practice",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day25-states game\Practice" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day25-states game" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day23-turtle crossing (CAPSTONE)" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day17-quiz game" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day16-oop-coffee-machine" />
-      <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day15-coffe-machine" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day25-states game\Practice\squirel exercise" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day25-states game\Practice" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)" />
     </key>
