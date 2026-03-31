@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day27-Unit Converter/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day27-Unit Converter/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day27-Unit Converter/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +62,7 @@
     "Python.high_score.executor": "Run",
     "Python.main.executor": "Run",
     "Python.player.executor": "Run",
+    "Python.playground.executor": "Run",
     "Python.quiz_brain.executor": "Run",
     "Python.scoreboard.executor": "Run",
     "Python.turtle_functions.executor": "Run",
