@@ -16,9 +16,6 @@ def check_if_state(answer):
 
 
 def missed_states(guessed_states):
-    missed_states = []
-    for state in all_states:
-        if state not in guessed_states:
-            missed_states.append(state)
+    missed_states = [i for i in all_states if i not in guessed_states]
     df = pd.DataFrame(missed_states)
     df.to_csv('states_to_learn.csv')
