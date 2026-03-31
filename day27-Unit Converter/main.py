@@ -2,8 +2,8 @@ from tkinter import *
 
 
 def convert():
-    kilometers = int(miles.get()) * 1.6
-    km['text'] = str(kilometers)
+    kilometers = int(miles.get()) * 1.60934
+    km['text'] = f'{kilometers:.2f}'
 
 
 window = Tk()
@@ -11,6 +11,7 @@ window.title('Km to Mile Converter')
 window.minsize(200, 100)
 
 miles = Entry(window)
+miles.insert(END, '0')
 miles.grid(row=0, column=1, padx=10, pady=10)
 
 miles_label = Label(window, text="Miles")
