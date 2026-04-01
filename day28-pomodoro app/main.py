@@ -7,21 +7,18 @@ RED = "#e7305b"
 GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Courier"
-WORK_MIN = 1
+WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 MAIN_FONT = (FONT_NAME, 35, "bold")
 BUTTON_FONT = (FONT_NAME, 10, "bold")
 CHECK_FONT = (FONT_NAME, 15, "bold")
 REPS = 0
-
-# TIMER RESET
-
-#  TIMER MECHANISM
+timer_countdown = None
 
 
-# COUNTDOWN MECHANISM
 def count_down(count):
+    global timer_countdown
     minutes = int(count / 60)
     seconds = count % 60
 
@@ -30,7 +27,7 @@ def count_down(count):
         seconds = f"0{seconds}"
     canvas.itemconfig(timer, text=f"{minutes}:{seconds}")
     if count > 0:
-        window.after(1000, count_down, count - 1)
+        timer_countdown = window.after(1000, count_down, count - 1)
     else:
         start_timer()
 
@@ -52,9 +49,12 @@ def start_timer():
 
 def reset_timer():
     global REPS
+    global timer_countdown
     REPS = 0
     title_label["text"] = "Timer"
     checkmark['text'] = ""
+    window.after_cancel(timer_countdown)
+    canvas.itemconfig(timer, text="00:00")
 
 # UI
 window = Tk()
@@ -74,7 +74,7 @@ canvas.grid(row=1, column=2)
 start_button = Button(text="Start", width=10, bg=GREEN, font=BUTTON_FONT, highlightthickness=0, command=start_timer)
 start_button.grid(row=2, column=1)
 
-reset_button = Button(text="Reset", width=10, bg=PINK, font=BUTTON_FONT, highlightthickness=0)
+reset_button = Button(text="Reset", width=10, bg=PINK, font=BUTTON_FONT, highlightthickness=0, command=reset_timer)
 reset_button.grid(row=2, column=3)
 
 checkmark = Label(window, text="", fg=GREEN, bg=YELLOW, font=CHECK_FONT, highlightthickness=0)
