@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="" />
+    <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/day28-pomodoro app/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day28-pomodoro app/tomato.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,17 +75,17 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/sarap/py_dev/Angela Yu Course(retake)/day26-NATO alphabet",
+    "last_opened_file_path": "C:/Users/sarap/py_dev/Angela Yu Course(retake)/day28-pomodoro app",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day28-pomodoro app" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day26-NATO alphabet" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day25-states game\Practice" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day25-states game" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day23-turtle crossing (CAPSTONE)" />
-      <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day17-quiz game" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day25-states game\Practice\squirel exercise" />
