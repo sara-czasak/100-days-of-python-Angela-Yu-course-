@@ -25,6 +25,11 @@ def make_password():
     password_entry.delete(0, END)
     password_entry.insert(END, passsword)
 
+
+def search():
+    website = website_entry.get()
+    search_password(website)
+
 # UI
 window = Tk()
 window.title("* Password Manager *")
@@ -40,7 +45,7 @@ website_label.grid(row=1, column=0)
 website_entry = Entry(window)
 website_entry.focus()
 website_entry.grid(row=1, column=1)
-search_button = Button(window, text="Search", width=15)
+search_button = Button(window, text="Search", width=15, command=search)
 search_button.grid(row=1, column=2, padx=1, pady=5)
 
 username_label = Label(window, text="Email/Username:")

@@ -21,3 +21,7 @@ def create_password():
         password = "".join(random.sample(password, len(password)))
         pyperclip.copy(password)
     return password
+
+
+def search_password(website):
+    print(f"Searching for {website}...")
