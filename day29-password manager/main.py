@@ -1,4 +1,6 @@
 from tkinter import *
+from tkinter import messagebox
+
 from brain import *
 
 
@@ -7,8 +9,20 @@ def save_password_data():
     website = website_entry.get()
     username = username_entry.get()
     password = password_entry.get()
-    save_password(website, username, password)
+    if website == "" or username == "" or password == "":
+        messagebox.showerror(title="Error", message="Please fill all fields")
+    else:
+        save_password(website, username, password)
+        messagebox.showinfo("Password Saved!", "Password has been successfully saved!")
+        website_entry.delete(0, END)
+        username_entry.delete(0, END)
+        password_entry.delete(0, END)
 
+
+def make_password():
+    passsword = create_password()
+    password_entry.delete(0, END)
+    password_entry.insert(END, passsword)
 
 # UI
 window = Tk()
@@ -35,7 +49,7 @@ password_label = Label(window, text="Password:")
 password_label.grid(row=3, column=0)
 password_entry = Entry(window)
 password_entry.grid(row=3, column=1)
-generate_button = Button(text='Generate Password')
+generate_button = Button(text='Generate Password', command=make_password)
 generate_button.grid(row=3, column=2, padx=1, pady=5)
 
 add_button = Button(window, text='Add', width=35, command=save_password_data)
