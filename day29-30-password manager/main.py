@@ -28,7 +28,15 @@ def make_password():
 
 def search():
     website = website_entry.get()
-    search_password(website)
+    data = search_password(website)
+    if data is None:
+        messagebox.showerror(title="Error", message="Data not found")
+    else:
+        messagebox.showinfo(title="Password Found!", message=f"Website: {website}\nUsername: {data['username']}\nPassword: {data['password']}")
+        password_entry.delete(0, END)
+        password_entry.insert(END, data['password'])
+        username_entry.delete(0, END)
+        username_entry.insert(END, data['username'])
 
 # UI
 window = Tk()

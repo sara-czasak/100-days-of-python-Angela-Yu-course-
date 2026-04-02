@@ -13,7 +13,7 @@ def save_password(website, username, password):
         }
     }
     with open('password_data.json', 'w') as file:
-        json.dump(data, file)
+        json.dump(data, file, indent=4)
 
 
 # Generate password
@@ -31,4 +31,9 @@ def create_password():
 
 
 def search_password(website):
-    print(f"Searching for {website}...")
+    with open('password_data.json', 'r') as file:
+        data = json.load(file)
+        if website in data:
+            return data[website]
+        else:
+            return None
