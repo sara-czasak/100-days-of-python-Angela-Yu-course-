@@ -1,0 +1,63 @@
+Front,Back
+What does len() do?,Returns the number of items in a string or list
+What is a f-string?,A string with embedded expressions: f"Hello {name}"
+What does int() do?,Converts a value to an integer
+What does str() do?,Converts a value to a string
+What does float() do?,Converts a value to a decimal number
+What does input() return?,Always returns a string
+What does range(1, 6) produce?,"1, 2, 3, 4, 5 (stop is exclusive)"
+What is a while loop for?,Repeating code while a condition is True
+What is a for loop for?,Iterating over a sequence or range
+How do you break out of a loop?,Use the break keyword
+How do you skip to the next iteration?,Use the continue keyword
+What does append() do?,Adds an item to the end of a list
+What does pop() do?,Removes and returns the last item of a list (or by index)
+How do you access a dict value?,dict["key"]
+What happens if a dict key doesn't exist?,Raises a KeyError
+How do you add a key to a dict?,dict["new_key"] = value
+What is a function?,A reusable block of code defined with def
+What does return do?,Exits a function and sends back a value
+What is a default parameter?,"A parameter with a preset value: def f(x=5):"
+What is *args?,Accepts any number of positional arguments as a tuple
+What is **kwargs?,Accepts any number of keyword arguments as a dict
+What is scope?,Where a variable is accessible in code
+What is a global variable?,A variable accessible throughout the entire file
+What does global do inside a function?,Lets you modify a global variable from inside a function
+What is a class?,A blueprint for creating objects
+What is __init__?,A method that runs when an object is created
+What is self?,A reference to the current instance of the class
+What is inheritance?,When a class takes on attributes/methods from another class
+How do you inherit from a class?,class Child(Parent):
+What does super() do?,Calls the parent class's __init__
+What is a method?,A function defined inside a class
+What is an attribute?,A variable belonging to an object
+What does isinstance() do?,Checks if an object is an instance of a class
+What is encapsulation?,Bundling data and methods inside a class
+What does open() do?,Opens a file and returns a file object
+What mode opens a file for reading?,'r'
+What mode opens a file for writing?,'w' (overwrites existing content)
+What mode appends to a file?,'a'
+What does with open() as f: do?,Opens a file and auto-closes it when done
+What does json.load() do?,Reads a JSON file into a Python dict
+What does json.dump() do?,Writes a Python dict to a JSON file
+What error means the JSON file is empty?,json.decoder.JSONDecodeError
+What does try/except do?,Runs code and catches errors without crashing
+What does FileNotFoundError mean?,Python couldn't find the file you tried to open
+What is a tuple?,An immutable ordered sequence: (1, 2, 3)
+What is the difference between a list and a tuple?,Lists are mutable; tuples are immutable
+How do you unpack a tuple?,a, b, c = (1, 2, 3)
+What does random.choice() do?,Returns a random item from a sequence
+What does random.randint(1, 10) do?,Returns a random integer between 1 and 10 inclusive
+What is a module?,A Python file containing reusable code
+How do you import a module?,import module_name
+How do you import one function from a module?,from module import function
+What is tkinter?,Python's built-in GUI library
+What is a Canvas widget?,A tkinter widget for drawing shapes and images
+What does window.mainloop() do?,Keeps the tkinter window open and listening for events
+What does after() do in tkinter?,Schedules a function to run after a delay (in ms)
+What does grid() do?,Places a widget in a window using rows and columns
+What is columnspan in grid?,Makes a widget span multiple columns
+What does StringVar() do?,A tkinter variable that auto-updates linked widgets
+What does entry.get() do?,Returns the current text in an Entry widget
+What does entry.delete(0, END) do?,Clears all text from an Entry widget
+What does PhotoImage() do?,Loads an image file for use in tkinter
