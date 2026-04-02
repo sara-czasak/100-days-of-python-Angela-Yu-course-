@@ -1,5 +1,6 @@
 import string
 import random
+import pyperclip
 
 
 # Save password to file
@@ -18,4 +19,5 @@ def create_password():
     password = uppercase + lowercase + digits + symbols
     for i in range(10):
         password = "".join(random.sample(password, len(password)))
+        pyperclip.copy(password)
     return password
