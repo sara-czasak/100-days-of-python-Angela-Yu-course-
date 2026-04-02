@@ -6,15 +6,20 @@ import json
 
 # Save password to file
 def save_password(website, username, password):
-    data = {
+    new_data = {
         website: {
             "username": username,
             "password": password,
         }
     }
+    try:
+        with open('password_data.json', 'r') as file:
+            data = json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        data = {}
+    data.update(new_data)
     with open('password_data.json', 'w') as file:
         json.dump(data, file, indent=4)
-
 
 # Generate password
 def create_password():
