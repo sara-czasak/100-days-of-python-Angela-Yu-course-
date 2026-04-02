@@ -1,12 +1,19 @@
 import string
 import random
 import pyperclip
+import json
 
 
 # Save password to file
 def save_password(website, username, password):
-    with open('password_data.txt', 'a') as file:
-        file.write(f"{website} | {username} | {password}\n")
+    data = {
+        website: {
+            "username": username,
+            "password": password,
+        }
+    }
+    with open('password_data.json', 'w') as file:
+        json.dump(data, file)
 
 
 # Generate password
