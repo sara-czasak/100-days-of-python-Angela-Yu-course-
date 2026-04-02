@@ -12,11 +12,13 @@ def save_password_data():
     if website == "" or username == "" or password == "":
         messagebox.showerror(title="Error", message="Please fill all fields")
     else:
-        save_password(website, username, password)
-        messagebox.showinfo("Password Saved!", "Password has been successfully saved!")
-        website_entry.delete(0, END)
-        username_entry.delete(0, END)
-        password_entry.delete(0, END)
+        confirm = messagebox.askquestion(title="Check", message=f"Please confirm data: \nWebsite: {website}\nUsername: {username}\nPassword: {password}")
+        if confirm == "yes":
+            save_password(website, username, password)
+            messagebox.showinfo("Password Saved!", "Password has been successfully saved!")
+            website_entry.delete(0, END)
+            username_entry.delete(0, END)
+            password_entry.delete(0, END)
 
 
 def make_password():
