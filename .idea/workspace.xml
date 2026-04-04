@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day32-automated bday email/practice/monday_motivation_quote/func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day32-automated bday email/practice/monday_motivation_quote/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day32-automated bday email/practice/monday_motivation_quote/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day32-automated bday email/practice/quotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day32-automated bday email/practice/monday_motivation_quote/quotes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day32-automated bday email/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day32-automated bday email/bday_card.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day32-automated bday email/bdays.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day32-automated bday email/func.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day32-automated bday email/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day32-automated bday email/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

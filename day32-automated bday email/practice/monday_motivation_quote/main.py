@@ -1,11 +1,16 @@
 import datetime
 import smtplib
 from func import *
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 
 # CONSTANTS
-my_email = 'rainbowsperler@gmail.com'
-app_password = 'yrki auau xfot ftqt'
+my_email = os.getenv('my_email')
+app_password = os.getenv('app_password')
 to_email = 'sara.p.czasak.m@gmail.com'
 
 
