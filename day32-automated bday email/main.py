@@ -21,10 +21,7 @@ day = dt.date.today().day
 with open('bdays.csv', 'r') as f:
     reader = csv.reader(f)
     for row in reader:
-        print('1 here')
         if row[3] == str(month) and row[4] == str(day):
-            print('2 here')
-            print(type(row[3]))
             card = write_card(row[0], row[2], year)
             with smtplib.SMTP('smtp.gmail.com', 587) as connection:
                 connection.starttls()
