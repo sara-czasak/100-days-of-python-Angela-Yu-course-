@@ -1,4 +1,3 @@
-from email.mime import image
 from tkinter import *
 from brain import *
 import random
@@ -15,6 +14,14 @@ def new_card():
     window.after(3000,flip_card, new_card_back)
 
 
+def save_card():
+    back = card.itemcget(card_text_content, 'text')
+    index = flashcard_back.index(back)
+    front = flashcard_front[index]
+    save_data(front, back)
+    new_card()
+
+
 def flip_card(new_card_back):
     card.itemconfig(bg_img, image=back_img)
     card.itemconfig(card_text_title, text="ANSWER", fill='white')
@@ -28,7 +35,6 @@ CONTENT_FONT = ("Arial", 15, "italic")
 
 # Data for flashcards
 flashcard_front, flashcard_back = get_data()
-
 
 # UI
 window = Tk()
@@ -53,7 +59,7 @@ new_card()
 # Buttons
 right_button = Button(image=right_img, highlightthickness=0, command=new_card)
 right_button.grid(row=1, column=0)
-wrong_button = Button(image=wrong_img, highlightthickness=0, command=new_card)
+wrong_button = Button(image=wrong_img, highlightthickness=0, command=save_card)
 wrong_button.grid(row=1, column=1)
 
 

@@ -16,5 +16,8 @@ def get_data():
         return front, back
 
 
+def save_data(front, back):
+    with open("resources/python_concepts_to_learn.csv", 'a') as file:
+        file.write(f"{front},{back}\n")
 
 
