@@ -43,14 +43,14 @@ iss_position = (latitude, longitude)
 
 
 def check_if_within_range(iss_pos):
-    if 55 >= iss_pos[0] <= 65 and 14 >= iss_pos[1] <= 19:
+    if 55 <= iss_pos[0] <= 65 and 14 <= iss_pos[1] <= 19:
         return True
     else:
         return False
 
 
 def check_if_dark(time, sunrise, sunset):
-    if time < sunrise and time > sunset:
+    if sunrise < time < sunset:
         return True
     else:
         return False
