@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day33-ISS overhead notifier/practice/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day33-ISS overhead notifier/practice/kanye.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day33-ISS overhead notifier/practice/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day33-ISS overhead notifier/practice/2/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day33-ISS overhead notifier/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day33-ISS overhead notifier/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day33-ISS overhead notifier/practice/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day33-ISS overhead notifier/practice/kanye.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day33-ISS overhead notifier/practice/main.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +95,11 @@
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day29-password manager" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day33-ISS overhead notifier\practice\1." />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day32-automated bday email\practice\monday_motivation_quote" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day32-automated bday email\practice" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day31-flashcard app (CAPSTONE)\resources" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day25-states game\Practice\squirel exercise" />
-      <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day25-states game\Practice" />
     </key>
   </component>
   <component name="SharedIndexes">

@@ -2,7 +2,6 @@ import requests
 import datetime as dt
 
 
-# Getting sunrise/sunset data
 # PARAMS
 parameters = {
     'lat': 50.144125,
@@ -10,20 +9,16 @@ parameters = {
     'formatted': 0,
 }
 
+
 time_now = dt.datetime.now().strftime("%H")
+
+
 
 response = requests.get(f'https://api.sunrise-sunset.org/json', params=parameters)
 response.raise_for_status()
 
 sunrise = response.json()['results']['sunrise'][11:13]
 sunset = response.json()['results']['sunset'][11:13]
-
-
-# Getting ISS data
-response = requests.get('http://api.open-notify.org/iss-now.json')
-response.raise_for_status()
-
-data = response.json()
-latitude = data['iss_position']['latitude']
-longitude = data['iss_position']['longitude']
-iss_position = (latitude, longitude)
+print(sunrise)
+print(sunset)
+print(time_now)
