@@ -3,6 +3,7 @@ import datetime as dt
 import smtplib
 import os
 from dotenv import load_dotenv
+import time
 
 
 load_dotenv()
@@ -54,14 +55,10 @@ def check_if_dark(time, sunrise, sunset):
     else:
         return False
 
-
-if check_if_within_range(iss_position) and check_if_dark(time_now, sunrise, sunset):
-    with smtplib.SMTP('smtp.gmail.com', 587) as connection:
-        connection.starttls()
-        connection.login(user=my_email, password=app_password)
-        connection.sendmail(from_addr=my_email, to_addrs='sara.p.czasak.m@gmail.com', msg='Subject:ISS is overhead!\n\nLook up! You can see the ISS in the sky now!')
-else:
-    with smtplib.SMTP('smtp.gmail.com', 587) as connection:
-        connection.starttls()
-        connection.login(user=my_email, password=app_password)
-        connection.sendmail(from_addr=my_email, to_addrs='sara.p.czasak.m@gmail.com', msg='Subject:ISS is not overhead!\n\nSorry, the ISS is not around right now..')
+while True:
+    time.sleep(60)
+    if check_if_within_range(iss_position) and check_if_dark(time_now, sunrise, sunset):
+        with smtplib.SMTP('smtp.gmail.com', 587) as connection:
+            connection.starttls()
+            connection.login(user=my_email, password=app_password)
+            connection.sendmail(from_addr=my_email, to_addrs='sara.p.czasak.m@gmail.com', msg='Subject:ISS is overhead!\n\nLook up! You can see the ISS in the sky now!')
