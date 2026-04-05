@@ -50,7 +50,7 @@ def check_if_within_range(iss_pos):
 
 
 def check_if_dark(time, sunrise, sunset):
-    if sunrise < time < sunset:
+    if time > sunset or time < sunrise:
         return True
     else:
         return False
