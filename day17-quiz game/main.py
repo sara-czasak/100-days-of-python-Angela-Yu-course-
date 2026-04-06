@@ -13,15 +13,6 @@ print("-" * 20)
 print('Are you ready to be quizzed? (y/n) ')
 start = input().lower()
 start = score_board.check_if_start(start)
-# ready = False
-# while not ready:
-#     if start.startswith('y'):
-#         ready = True
-#     elif start.startswith('n'):
-#         ready = True
-#     else:
-#         print('Please enter either "y" or "n"')
-#         start = input().lower()
 
 
 if start:
