@@ -6,14 +6,21 @@ dotenv.load_dotenv()
 API_KEY = os.getenv('API_KEY')
 
 
-parameters = {
-    "q": "Krakow",
-    "appid": API_KEY
+parameters_hourly = {
+    'lat': 50.064651,
+    'lon': 19.944981,
+    'appid': API_KEY,
 }
 
+response = requests.get('https://pro.openweathermap.org/data/2.5/forecast', params=parameters_hourly)
 
-response = requests.get('https://api.openweathermap.org/data/2.5/weather', params=parameters)
+def check_if_rain():
+    for i in response.json()['list']:
+        data = [i['weather'][0]['main'] for i in response.json()['list']][:12]
+        if 'Rain' in data:
+            return True
+        else:
+            return False
 
-
-weather = response.json()['weather'][0]['main']
-
+if check_if_rain():
+    print('Bring an umbrella')

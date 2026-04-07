@@ -46,44 +46,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.Food.executor": "Run",
-    "Python.Snake.executor": "Run",
-    "Python.__init__.executor": "Run",
-    "Python.brain.executor": "Run",
-    "Python.car.executor": "Run",
-    "Python.classes.executor": "Run",
-    "Python.coffee_machine.executor": "Run",
-    "Python.d.executor": "Run",
-    "Python.datetime-module.executor": "Run",
-    "Python.datetime.executor": "Run",
-    "Python.decode_encode.executor": "Run",
-    "Python.func.executor": "Run",
-    "Python.functions.executor": "Run",
-    "Python.game_data.executor": "Run",
-    "Python.high_score.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.player.executor": "Run",
-    "Python.playground.executor": "Run",
-    "Python.quiz_brain.executor": "Run",
-    "Python.quiz_data.executor": "Run",
-    "Python.scoreboard.executor": "Run",
-    "Python.turtle_functions.executor": "Run",
-    "Python.turtle_helper_functions.executor": "Run",
-    "Python.ui.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/sarap/py_dev/Angela Yu Course(retake)/day34-quizzler app",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Food.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Snake.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
+    &quot;Python.brain.executor&quot;: &quot;Run&quot;,
+    &quot;Python.car.executor&quot;: &quot;Run&quot;,
+    &quot;Python.classes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.coffee_machine.executor&quot;: &quot;Run&quot;,
+    &quot;Python.d.executor&quot;: &quot;Run&quot;,
+    &quot;Python.datetime-module.executor&quot;: &quot;Run&quot;,
+    &quot;Python.datetime.executor&quot;: &quot;Run&quot;,
+    &quot;Python.decode_encode.executor&quot;: &quot;Run&quot;,
+    &quot;Python.func.executor&quot;: &quot;Run&quot;,
+    &quot;Python.functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.game_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.high_score.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.player.executor&quot;: &quot;Run&quot;,
+    &quot;Python.playground.executor&quot;: &quot;Run&quot;,
+    &quot;Python.quiz_brain.executor&quot;: &quot;Run&quot;,
+    &quot;Python.quiz_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scoreboard.executor&quot;: &quot;Run&quot;,
+    &quot;Python.turtle_functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.turtle_helper_functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ui.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sarap/py_dev/Angela Yu Course(retake)/day34-quizzler app&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day34-quizzler app" />
