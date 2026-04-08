@@ -8,7 +8,7 @@ dotenv.load_dotenv()
 API_KEY = os.getenv('API_KEY')
 account_sid = os.getenv("TWILIO_ACCOUNT_SID")
 auth_token = os.getenv("TWILIO_AUTH_TOKEN")
-number = os.getenv("TWILIO_NUMBER")
+number = os.getenv("TWILLIO_NUMBER")
 
 
 parameters_hourly = {
@@ -17,6 +17,8 @@ parameters_hourly = {
     'appid': API_KEY,
     'cnt': 4
 }
+
+
 
 response = requests.get('https://pro.openweathermap.org/data/2.5/forecast', params=parameters_hourly)
 response.raise_for_status()
