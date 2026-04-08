@@ -8,7 +8,7 @@ dotenv.load_dotenv()
 API_KEY = os.getenv('API_KEY')
 account_sid = os.getenv("TWILIO_ACCOUNT_SID")
 auth_token = os.getenv("TWILIO_AUTH_TOKEN")
-number = os.getenv("TWILLIO_NUMBER")
+number = os.getenv("TWILIO_NUMBER")
 
 
 parameters_hourly = {
