@@ -46,12 +46,26 @@ request_header = {
 
 # Posting a pixel to graph
 
-pixel_config = {
-    'date': today,
-    'quantity': "5"
-}
+# pixel_config = {
+#     'date': '20260410',
+#     'quantity': "2"
+# }
+#
+# PIXEL_ENDPOINT = f'{PIXELA_ENDPOINT}/{PIXELA_USERNAME}/graphs/{GRAPH_ID}'
+#
+# response = requests.post(PIXEL_ENDPOINT, headers=request_header, json=pixel_config)
+# print(response.text)
 
-PIXEL_ENDPOINT = f'{PIXELA_ENDPOINT}/{PIXELA_USERNAME}/graphs/{GRAPH_ID}'
 
-response = requests.post(PIXEL_ENDPOINT, headers=request_header, json=pixel_config)
+PUT_ENDPOINT = f"{PIXELA_ENDPOINT}/{PIXELA_USERNAME}/graphs/{GRAPH_ID}/20260410"
+#
+# put_params = {
+#     'quantity': "10"
+# }
+#
+# response = requests.put(PUT_ENDPOINT, headers=request_header, json=put_params)
+# print(response.text)
+
+
+response = requests.delete(PUT_ENDPOINT, headers=request_header)
 print(response.text)
