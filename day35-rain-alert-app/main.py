@@ -39,11 +39,4 @@ if check_if_rain():
         from_=number,
         to="+48692948897",
     )
-else:
-    client = Client(account_sid, auth_token)
-    message = client.messages.create(
-        body="It's a pretty day outside!",
-        from_=number,
-        to="+48692948897",
-    )
 
