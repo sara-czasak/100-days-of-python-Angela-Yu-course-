@@ -18,3 +18,16 @@ class DataManager:
         r = requests.get(self.get_endpoint, headers=self.header)
         r.raise_for_status()
         return r.json()['sheet1']
+
+
+    def get_show_id_and_season(self):
+        data = self.get_data()
+        data_list = []
+        for i in data:
+            data_list.append((i['tmbdShowId'], i['latestSeason']))
+        return data_list
+
+
+if __name__ == '__main__':
+    manager = DataManager()
+    print(manager.get_show_id_and_season())

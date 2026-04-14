@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day39-tv show notifier/data_manger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day39-tv show notifier/check_latest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day39-tv show notifier/data_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/day39-tv show notifier/data_manager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day39-tv show notifier/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day39-tv show notifier/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,9 +56,11 @@
     "Python.__init__.executor": "Run",
     "Python.brain.executor": "Run",
     "Python.car.executor": "Run",
+    "Python.check_latest.executor": "Run",
     "Python.classes.executor": "Run",
     "Python.coffee_machine.executor": "Run",
     "Python.d.executor": "Run",
+    "Python.data_manager.executor": "Run",
     "Python.datetime-module.executor": "Run",
     "Python.datetime.executor": "Run",
     "Python.decode_encode.executor": "Run",
