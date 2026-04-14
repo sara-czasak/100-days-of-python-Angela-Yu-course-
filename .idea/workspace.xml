@@ -7,6 +7,9 @@
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day39-Flight deal finder/data_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/day39-Flight deal finder/data_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day39-Flight deal finder/flight_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/day39-Flight deal finder/flight_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day39-Flight deal finder/flight_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/day39-Flight deal finder/flight_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day39-Flight deal finder/http_cache.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/day39-Flight deal finder/http_cache.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day39-Flight deal finder/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day39-Flight deal finder/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +84,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/sarap/py_dev/Angela Yu Course(retake)/day39-Flight deal finder",
+    "last_opened_file_path": "C:/Users/sarap/py_dev/Angela Yu Course(retake)",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
