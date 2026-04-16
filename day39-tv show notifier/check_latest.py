@@ -1,6 +1,3 @@
-import requests
-import os
-import dotenv
 from notifier import *
 
 dotenv.load_dotenv()

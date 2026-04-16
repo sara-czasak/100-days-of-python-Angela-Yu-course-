@@ -1,6 +1,3 @@
-import requests
-import os
-import dotenv
 from data_manager import *
 from twilio.rest import Client
 

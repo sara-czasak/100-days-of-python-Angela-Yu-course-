@@ -1,9 +1,4 @@
-import requests
-import dotenv
-import os
-from pprint import pprint
 import datetime as dt
-from data_manager import *
 from check_latest import *
 
 
