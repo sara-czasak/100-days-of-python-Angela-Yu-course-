@@ -17,7 +17,7 @@ class Notifier:
 
     def send_notification(self, show_id):
         data_manager = DataManager()
-        show_name = data_manager.find_episode_by_id(show_id)
+        show_name, row_id = data_manager.find_episode_by_id(show_id)
         message = self.client.messages.create(
             body=f"Show on tonight!\nShow name: {show_name}",
             from_=self.twilio_number,

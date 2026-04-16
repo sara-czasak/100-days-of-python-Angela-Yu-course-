@@ -12,6 +12,7 @@ class DataManager:
         }
         self.get_endpoint = os.getenv('SHEETY_GET_ENDPOINT')
         self.post_endpoint = os.getenv('SHEETY_POST_ENDPOINT')
+        self.put_endpoint = os.getenv('SHEETY_PUT_ENDPOINT')
 
 
     def get_data(self):
@@ -32,22 +33,25 @@ class DataManager:
         data = self.get_data()
         for show in data:
             if show['tmbdShowId'] == show_id:
-                self.update_data(show_id, show['show'])
-                return show['show']
+                # self.update_data(show_id, show['show'])
+                return show['show'], show['id']
 
 
-    def update_data(self, show_id, show_name):
-        data = self.get_data()
-        for show in data:
-            if show['tmbdShowId'] == show_id:
-                current_latest = show['latestEpisode']
-                new_latest = int(current_latest) + 1
-                json = {
-                    'show': show_name,
-                    'tmbdShowId': show_id,
-                    'latestEpisode': new_latest,
-                }
-                r = requests.post(self.post_endpoint, headers=self.header, json={})
+    def update_data(self, new_data):
+        tmbdShowId = new_data['show_id']
+        new_episode = new_data['episode_number']
+        new_date = new_data['air_date']
+        show, row_id = self.find_episode_by_id(tmbdShowId)
+        last_episode_date = show['next_episode_date']
+        data_to_put = {
+            row_id: {
+                'latestEpisode': new_episode,
+                'nextEpisodeDate': new_date,
+                'lastEpisodeData': last_episode_date,
+            }
+        }
+        r = requests.put(self.put_endpoint, headers=self.header, json=data_to_put)
+        print(new_data)
 
 
 if __name__ == '__main__':
