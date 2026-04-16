@@ -55,7 +55,6 @@ class DataManager:
         print(new_data)
 
 
-
 if __name__ == '__main__':
     manager = DataManager()
     print(manager.get_show_id_and_season())
