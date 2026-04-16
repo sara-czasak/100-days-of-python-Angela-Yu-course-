@@ -37,21 +37,23 @@ class DataManager:
                 return show['show'], show['id']
 
 
-    def update_data(self, new_data):
+    def update_data(self, new_data, today):
         tmbdShowId = new_data['show_id']
         new_episode = new_data['episode_number']
         new_date = new_data['air_date']
         show, row_id = self.find_episode_by_id(tmbdShowId)
-        last_episode_date = show['next_episode_date']
         data_to_put = {
-            row_id: {
+            'sheet1': {
                 'latestEpisode': new_episode,
                 'nextEpisodeDate': new_date,
-                'lastEpisodeData': last_episode_date,
+                'lastEpisodeDate': today,
+                'notified': 'yes',
             }
         }
-        r = requests.put(self.put_endpoint, headers=self.header, json=data_to_put)
+        endpoint = f'{self.put_endpoint}{row_id}'
+        r = requests.put(endpoint, headers=self.header, json=data_to_put)
         print(new_data)
+
 
 
 if __name__ == '__main__':
