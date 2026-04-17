@@ -1,3 +1,7 @@
+html {
+    text-align: center;
+}
+
 h1 {
     font-size: 60px;
 }
@@ -12,4 +16,9 @@ h3 {
 
 p {
     font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
