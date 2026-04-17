@@ -11,5 +11,10 @@ img {
 
 div {
     align: center;
-    padding: 10px
+    padding: 10px;
+    font-family: "Libre Baskerville", serif;
+}
+
+p {
+    font-size: 20px
 }
