@@ -8,3 +8,5 @@ with open('website.html','r') as f:
 # Provide markup and parser
 soup = BeautifulSoup(content, 'html.parser')
 
+# .string gets the content of the tag
+title = soup.title.string
