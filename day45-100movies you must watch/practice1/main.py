@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 
 
-with open('website.html','r') as f:
+with open('website.html', 'r') as f:
     content = f.read()
 
 
