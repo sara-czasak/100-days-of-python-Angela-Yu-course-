@@ -1,4 +1,28 @@
+html {
+    background-color: pink;
+    color: #FF0080;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
 h1 {
-    text-align: center;
+    font-size: 70px;
+}
+
+h2 {
     font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+a {
+    font-size: 20px;
+    color: #FF0080;
+}
+
+img {
+    border-radius: 50%;
+    width: 20rem;
 }
