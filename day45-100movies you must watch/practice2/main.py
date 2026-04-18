@@ -2,22 +2,19 @@ from bs4 import BeautifulSoup
 import requests
 
 
-soup_ingredients = requests.get('https://news.ycombinator.com/news').text
+soup_ingredients = requests.get('https://appbrewery.github.io/news.ycombinator.com/').text
 soup = BeautifulSoup(soup_ingredients, 'html.parser')
 
+article_tags = soup.find_all(class_='storylink')
+aticle_upvotes = soup.find_all(name='span', class_='score')
 
-articles = soup.select('.titleline')
-article_titles = [i.getText() for i in articles]
-
-
-scores = soup.select('.score')
-score = [i.text.replace(' points', '') for i in scores]
-index = score.index(max(score))
-print(index)
+article_tag_texts = [i.text for i in article_tags]
+article_upvotes_all = [i.text.replace(' points', '') for i in aticle_upvotes]
+article_links = [i.get('href') for i in article_tags]
 
 
-# max_score_title = article_titles[index]
-# print(max_score_title)
+max_voted_article_index = article_upvotes_all.index(max(article_upvotes_all))
+max_article = article_tag_texts[max_voted_article_index]
 
-# # print(article_titles)
-# print(articles[0])
+
+print(f"The article with the most votes is {max_article} with {article_upvotes_all[max_voted_article_index]} points. Link to article: {article_links[max_voted_article_index]}")
