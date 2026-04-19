@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/day47-Amazon price tracker/part2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day47-Amazon price tracker/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day47-Amazon price tracker/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +67,7 @@
     "Python.game_data.executor": "Run",
     "Python.high_score.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.part2.executor": "Run",
     "Python.player.executor": "Run",
     "Python.playground.executor": "Run",
     "Python.quiz_brain.executor": "Run",
