@@ -1,9 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
+import smtplib
 
 
 AMAZON_CLONE_ENDPOINT = 'https://appbrewery.github.io/instant_pot/'
+target_price = 100.00
 
+# Getting current price of instant pot as a float
 r = requests.get(AMAZON_CLONE_ENDPOINT)
 
 soup = BeautifulSoup(r.content, 'html.parser')
