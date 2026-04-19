@@ -13,7 +13,7 @@ headers = {
     'User-Agent': 'CCBot/2.0 (https://commoncrawl.org/faq/)',
     'Accept-Language': 'en-US,en;q=0.5',
 }
-TARGET_PRICE = 400.00
+TARGET_PRICE = 100.00
 MY_EMAIL = os.getenv('my_email')
 APP_PASSWORD = os.getenv('app_password')
 
