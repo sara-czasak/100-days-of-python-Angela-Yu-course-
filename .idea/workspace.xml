@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/day54-flask/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day54-flask/py_decorators_practice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day54-flask/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day54-flask/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day49-Automated gym routine/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day49-Automated gym routine/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +55,7 @@
     "Python.Food.executor": "Run",
     "Python.Snake.executor": "Run",
     "Python.__init__.executor": "Run",
+    "Python.app.executor": "Run",
     "Python.brain.executor": "Run",
     "Python.car.executor": "Run",
     "Python.challange1.executor": "Run",
