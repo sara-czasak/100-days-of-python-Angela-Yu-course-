@@ -1,7 +1,101 @@
-html {
-    background-image: url('../static/images/background.jpg');
+.header-div {
+    text-align: center;
+    background-image: url('../static/images/header_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 100vw
+    height: 200px;
+    align-content: center
+}
+
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 80px;
+}
+
+.bitcount-grid-single-ink {
+  font-family: "Bitcount Grid Single Ink", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0,
+    "SZP1" 0,
+    "SZP2" 0,
+    "XPN1" 0,
+    "XPN2" 0,
+    "YPN1" 0,
+    "YPN2" 0;
+}
+
+.img-div {
+    text-align: center;
+    color: purple;
+    margin: 0 auto;
+    width: 200px;
+}
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    border: 3px solid purple;
+    margin: 10px
+}
+
+.spacing {
+    height: 100px
+}
+
+hr {
+    text-align: center;
+    width: 200px;
+    color: purple;
+    border: 5px dotted purple
+}
+
+.contact {
+    color: purple;
+    margin: 0 auto;
+    width: 400px;
+}
+
+.alumni-sans-pinstripe-regular {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.skills {
+    color: purple;
+    margin: 0 auto;
+    width: 300px;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    height: 40px;
+    width: 180px;
+}
+
+.my-foot {
+    background-color: purple;
+    text-align: center;
+    color: white;
+}
+
+.my-foot a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px
+}
+
+.playwrite-nz-guides-regular {
+  font-family: "Playwrite NZ Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
