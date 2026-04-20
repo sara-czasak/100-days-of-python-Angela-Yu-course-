@@ -11,7 +11,7 @@ def index():
 
 @app.route('/secret')
 def secret():
-    return '<h1>What do you call a well-balanced horse?\n<em>STABLE<em></h1>'
+    return '<h1 style="text-align:center">What do you call a well-balanced horse?</h1><br><h2 style="text-align:center">STABLE</h2><h3 style="text-align:center">😂😂😂</h3>'
 
 
 if __name__ == '__main__':
