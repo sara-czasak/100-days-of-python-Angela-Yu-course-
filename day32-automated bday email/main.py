@@ -26,5 +26,7 @@ with open('bdays.csv', 'r') as f:
             with smtplib.SMTP('smtp.gmail.com', 587) as connection:
                 connection.starttls()
                 connection.login(user=my_email, password=app_password)
-                connection.sendmail(from_addr=my_email, to_addrs='sara.p.czasak.m@gmail.com', msg=f'Subject:Happy Birthday!!!\n\n{card}')
+                connection.sendmail(
+                    from_addr=my_email, to_addrs='sara.p.czasak.m@gmail.com', msg=f'Subject:Happy Birthday!!!\n\n{card}'
+                )
 

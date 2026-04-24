@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25845247-48be-4c50-b46b-2847975b0616" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/day56-Name Card/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/day56-Name Card/static/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day56-Name Card/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/day56-Name Card/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day56-Name Card/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/day56-Name Card/project1/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day56-Name Card/static/images/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/day56-Name Card/project1/static/images/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day56-Name Card/static/images/fix.webp" beforeDir="false" afterPath="$PROJECT_DIR$/day56-Name Card/project1/static/images/fix.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day56-Name Card/static/images/header_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/day56-Name Card/project1/static/images/header_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day56-Name Card/static/images/profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/day56-Name Card/project1/static/images/profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day56-Name Card/static/images/work.webp" beforeDir="false" afterPath="$PROJECT_DIR$/day56-Name Card/project1/static/images/work.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day56-Name Card/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/day56-Name Card/project1/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day56-Name Card/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/day56-Name Card/project1/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,11 +110,11 @@
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day41-movie ranking" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sarap\dev\py_dev\Angela Yu Course(retake)\day56-Name Card\project1" />
       <recent name="C:\Users\sarap\dev\py_dev\Angela Yu Course(retake)\day48-cookie clicker\practice" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day45-100movies you must watch" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day45-100movies you must watch\practice" />
       <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day33-ISS overhead notifier\practice\1." />
-      <recent name="C:\Users\sarap\py_dev\Angela Yu Course(retake)\day32-automated bday email\practice\monday_motivation_quote" />
     </key>
   </component>
   <component name="SharedIndexes">
