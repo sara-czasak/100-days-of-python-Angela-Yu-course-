@@ -6,12 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../static/style.css">
-    <title>My website</title>
+    <title>Blog</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <h2>{{ 5 * 6 }}</h2>
-    <h3>Random number: {{ number }}</h3>
+    {% for post in blog %}
+    <h2>Title: {{ post['title'] }} </h2>
+    <h3>Subtitle: {{ post['subtitle'] }}</h3>
+    {% endfor %}
 </body>
-<footer>© {{ year }} Built by Star_Wasp7272</footer>
 </html>
